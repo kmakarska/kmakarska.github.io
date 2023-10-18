@@ -32,7 +32,7 @@ a {
     color: white;
 }
 
-#hero {
+#welcome {
     text-align: center;
     padding: 5%;
     background-image: url('desktop-image.png');
@@ -102,7 +102,7 @@ footer {
         margin: 5% 0;
     }
 
-    #hero {
+    #welcome {
         background-image: url('smaller-image.png');
         padding: 3%;
     }
