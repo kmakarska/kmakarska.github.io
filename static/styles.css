@@ -60,6 +60,7 @@ footer {
     padding: 1%;
 }
 
+/* default image row styling */
 #image-row {
     display: flex;
     justify-content: space-between;
@@ -67,12 +68,14 @@ footer {
  
 }
 
+/* default image styling */
 #image-row img {
     width: 30%;
     max-width: 200px;
     height: auto;
 }
 
+/* implementing styled button */
 .button {
     display: inline-block;
     padding: 10px 20px;
