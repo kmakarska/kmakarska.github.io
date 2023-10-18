@@ -1,6 +1,6 @@
 /* all images found on pexels.com */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: #f5f5f5;
 }
@@ -9,6 +9,12 @@ header {
     background: #1f1f1f;
     color: #fff;
     padding: 2%;
+   
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
 }
 
 nav ul {
@@ -33,6 +39,8 @@ a {
     background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
     color: white;
+    font-family: 'Times New Roman', Times, serif
+
 }
 
 #engines,
@@ -41,6 +49,8 @@ a {
     background: #fff;
     padding: 2%;
     margin: 2% 0;
+    border: 1px solid;
+    border-color:#333;
 }
 
 footer {
@@ -50,16 +60,38 @@ footer {
     padding: 1%;
 }
 
-/* Media query for tablets and mobile */
-@media screen and (max-width: 768px) {
-    #hero {
-        background-image: url('smaller-image.png');
-    }
+#image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+#image-row img {
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003162; 
+    color: #fff; 
+    text-decoration: none;
+    border: none;
+    border-radius: 4px; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* darker blue on hover */
+.button:hover {
+    background-color: #001f3c; 
 }
 
 
-
-/* Media Queries for Tablet and Mobile Screens */
+/* media queries for tablet and mobile screens */
 @media screen and (max-width: 768px) {
     nav ul {
         text-align: center;
@@ -71,6 +103,7 @@ footer {
     }
 
     #hero {
+        background-image: url('smaller-image.png');
         padding: 3%;
     }
 
@@ -79,5 +112,15 @@ footer {
     #popular-games {
         padding: 2%;
         margin: 5% 0;
+    }
+
+    #image-row {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #image-row img {
+        width: 20%;
+        margin: 10px 0;
     }
 }
